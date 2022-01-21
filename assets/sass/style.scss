@@ -1,0 +1,110 @@
+/* 
+Template Name : TheRetroShop - Premium eCommerce Template
+Template URI  : #
+Description   : Premium ecommerce HTML Template
+
+-------- Table Of Contents --------- //
+-------- 1-  General
+-------- 2-  Typography
+-------- 3-  Elements
+--------- 3.1-  Pageheaders
+--------- 3.2-  Collapses
+--------- 3.3-  Tabs
+--------- 3.4-  Buttons
+--------- 3.5-  Forms
+--------- 3.6-  Progressbars
+--------- 3.7-  Pagination
+--------- 3.8-  Social Icons
+--------- 3.9-  More
+-------- 4-  Headers
+-------- 5-  Homepages
+-------- 6-  Blog
+-------- 7-  Portfolio
+-------- 8-  Category
+-------- 9- Product
+-------- 10- Cart
+-------- 11- Checkout
+-------- 12- Contact
+-------- 13- 404
+-------- 14- Login
+-------- 15- Footers
+-------- 16- Coming Soon
+-------- End Table Of Contents ---- //
+*/
+
+@import 'mixins';
+@import 'variables';
+@import 'sprites';
+
+
+/* ----------- 1.General --------------
+--------------------------------------*/
+@import 'general';
+
+
+/* ----------- 2.Typography -----------
+--------------------------------------*/
+@import 'typography';
+
+
+/* ----------- 3.Elements ------------
+--------------------------------------*/
+@import 'elements/collapses';
+@import 'elements/tabs';
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/progressbars';
+@import 'elements/pagination';
+@import 'elements/social-icons';
+@import 'elements/more';
+
+
+/* ----------- 4.Headers ---------------
+--------------------------------------*/
+@import 'headers';
+
+
+/* ----------- 5.Homepages ---------------
+--------------------------------------*/
+@import 'home';
+
+/* ----------- 6. Blog ---------------
+--------------------------------------*/
+@import 'blog';
+
+/* ----------- 8. Category ---------------
+--------------------------------------*/
+@import 'category';
+
+/* ----------- 9. Product ---------------
+--------------------------------------*/
+@import 'product';
+@import 'swiper';
+
+/* ----------- 10. Cart ---------------
+--------------------------------------*/
+@import 'cart';
+
+/* ----------- 11. Checkout ---------------
+--------------------------------------*/
+@import 'checkout';
+
+/* ----------- 12. Contact Us ---------------
+--------------------------------------*/
+@import 'contactus';
+
+/* ----------- 13. 404 ---------------
+--------------------------------------*/
+@import '404page';
+
+/* ----------- 16. Coming Soon ---------------
+--------------------------------------*/
+@import 'coming-soon';
+
+/* ----------- 15.Footers ---------------
+--------------------------------------*/
+@import 'footers';
+
+/* ----------- Modal -----------------
+--------------------------------------*/
+@import 'modal'; 

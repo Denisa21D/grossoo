@@ -1,0 +1,417 @@
+.coming-soon {
+    img {
+        max-width: 100%;
+    }
+    p {
+        letter-spacing: 0.05em;
+        text-align: center;
+        clear: both;
+        font: 300 14px/1.5 Montserrat, sans-serif;
+    }
+    .content {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+    .countdown {
+        text-align: center;
+        
+        @media (min-width: 480px) and (max-width: 600px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .countdown-row {
+        padding: 0px;
+        display: inline-block;
+        
+        span { 
+            display: inline-block;
+        }
+    }
+    
+    .countdown-amount {
+        font: 300 48px/0.9 Montserrat, sans-serif;
+        width: 80px;
+        height: 60px;
+
+        @media (min-width: 1200px) {
+            font-size: 60px;
+        }
+    }
+    .countdown-period {
+        text-transform: uppercase;
+        width: 80px;
+        height: 16px;
+        margin-top: 4px;
+        font: 300 14px/1.25 Montserrat, sans-serif;
+
+        @media (min-width: 992px) {
+            font-size:15px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size:16px;
+            margin-top:10px;
+        }
+
+        @media (min-width: 1600px) {
+            font-size:17px;
+        }
+    }
+
+    .newsletter {
+        form { 
+            max-width: 330px;
+            margin: 0 auto;
+            position: relative;
+            padding: 2px 15px;
+            border: 2px solid #333;
+            border-radius: 24px; 
+        }
+        button {
+            padding: 10px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            border-radius: 20px;
+            background-color: #333;
+        }
+        .form-control { 
+            border: none;
+            width: 90%;
+            height: 40px;
+            color: #333;
+            box-shadow: none;
+            transition: all 0.4s; 
+        }
+        .sprite-arrow-right {
+            background: url('../img/sprite/20x20/arrow-right.png') no-repeat;
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+    }
+    &.type1 {
+        .header {
+            padding-bottom: 30px;
+            border-bottom: 3px solid #333;
+            
+            .logo {
+                margin: 0px;
+                top: 0;
+            }
+        }
+        h1 {
+            color: #333;
+            font: 800 72px/0.9 Montserrat, sans-serif;
+            text-shadow: 0 4px 1px rgba(0,0,0, 0.05);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            text-align: center;
+            margin-bottom: 54px;
+            
+            @media (max-width: 767px) {
+                font-size: 32px;
+                margin-bottom: 35px;
+            }
+        }
+        .content {
+            p {
+                margin-bottom: 42px;
+                margin-top: 42px;
+                
+                @media (max-width: 767px) {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .countdown-show4 .countdown-section {
+            width: 160px;
+            padding: 36px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            max-width: 165px;
+            margin: 0 10px;
+            
+            @media (max-width: 767px) {
+                width: 127px;
+                padding: 21px 20px;
+                margin-top: 10px;
+            }
+            
+            @media (min-width: 768px) {
+                margin: 0 6px;
+            }
+            
+            @media (min-width: 1200px) {
+                margin: 0 10px;
+            }
+        }
+    }
+    &.type2 {
+        .header {
+            padding-top: 135px;
+            padding-bottom: 85px;
+            
+            .logo {
+                margin: 0px;
+                top: 0;
+            }
+            
+            @media (max-width: 768px) {
+                padding-top: 70px;
+                padding-bottom: 40px;
+            }
+        }
+        h1 {
+            color: #333;
+            font: 300 72px/0.9 Montserrat, sans-serif;
+            text-shadow: 0 4px 1px rgba(0,0,0, 0.05);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 0px;
+            width: calc(100% - 90px);
+            float: left;
+            text-align: center;
+            
+            @media (max-width: 767px) {
+                font-size: 32px;
+                padding: 12px 0;
+            }
+        }
+        .title {
+            margin-bottom: 60px;
+            padding: 20px 0;
+            
+            .toggle-wrapper {
+                float : left;
+                padding: 10px 0;
+                
+                .icon-bar {
+                      position: relative;
+                      display: block;
+                      width: 45px;
+                      height: 3px;
+                      border-radius: 0;
+                      background-color: #333;
+                      transition: all 0.4s;
+                }
+                
+                .icon-bar + .icon-bar {
+                  margin-top: 12px;
+                }
+                
+                &:last-child {
+                    float: right;
+                }
+            }
+        }
+        .countdown-show4 .countdown-section {
+            border: none;
+            position: relative;
+            padding: 0 40px;
+            
+            &:after {
+                display: block;
+                content: " / ";
+                color: #333;
+                position: absolute;
+                top: 10px;
+                right: -9px;
+                font: 300 60px/0.9 Montserrat, sans-serif;
+                
+                @media (max-width: 600px) {
+                    top: 30px;
+                }
+            }
+            
+            &:first-child {
+                padding-left: 0px;
+            }
+            
+            &:last-child{
+                padding-right: 0px;
+                
+                &:after {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                &:nth-child(2):after {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                width: 130px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                
+                &:nth-child(3){
+                    padding-left: 0px;
+                }
+                
+                &:nth-child(2){
+                    padding-right: 0px;
+                }
+            }
+            
+            .countdown-period {
+                display: block;
+                margin-top: 0px;
+            }
+        }
+        
+        .content {
+            padding-top: 0px;
+            p {
+                margin-bottom: 50px;
+                margin-top: 35px;
+                
+                @media (max-width: 767px) {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    &.type3 {
+        background-color: #cfdde3;
+        
+        .header {
+            padding-top: 135px;
+            padding-bottom: 85px;
+            
+            .logo {
+                margin: 0px;
+                top: 0;
+                background-color: transparent;
+            }
+            
+            @media (max-width: 768px) {
+                padding-top: 70px;
+                padding-bottom: 40px;
+            }
+        }
+        
+        h1{
+            color: #333;
+            font: 300 72px/0.9 Montserrat, sans-serif;
+            text-shadow: 0 4px 1px rgba(0,0,0, 0.05);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 0px;
+            width: calc(100% - 90px);
+            float: left;
+            text-align: center;
+            
+            @media (max-width: 767px) {
+                font-size: 32px;
+                padding: 12px 0;
+            }
+        }
+        .title {
+            margin-bottom: 60px;
+            padding: 20px 0;
+            
+            .toggle-wrapper {
+                float: left;
+                padding: 10px 0;
+                
+                .icon-bar {
+                      position: relative;
+                      display: block;
+                      width: 45px;
+                      height: 3px;
+                      border-radius: 0;
+                      background-color: #333;
+                      transition: all 0.4s;
+                }
+                
+                .icon-bar + .icon-bar {
+                  margin-top: 12px;
+                }
+                
+                &:last-child{
+                    float: right;
+                }
+            }
+        }
+        
+        .countdown-show4 .countdown-section {
+            border: none;
+            position: relative;
+            padding: 0 40px;
+            
+            &:after{
+                display: block;
+                content: " / ";
+                color: #333;
+                position: absolute;
+                top: 10px;
+                right: -9px;
+                font: 300 60px/0.9 Montserrat, sans-serif;
+                
+                @media (max-width: 600px) {
+                    top: 30px;
+                }
+            }
+            
+            &:first-child{
+                padding-left: 0px;
+            }
+            
+            &:last-child{
+                padding-right: 0px;
+                
+                &:after{
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                &:nth-child(2):after {
+                    display: none;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                width: 130px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                
+                &:nth-child(3) {
+                    padding-left: 0px; 
+                }
+                
+                &:nth-child(2) {
+                    padding-right: 0px;
+                }
+            }
+            
+            .countdown-period {
+                display: block;
+                margin-top: 0px;
+            }
+        }
+        .content {
+            padding-top: 0px;
+            
+            p {
+                margin-bottom: 50px;
+                margin-top: 35px;
+                
+                @media (max-width: 767px) {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        
+        .newsletter .form-control {
+            background-color: #cfdde3;
+        }
+    }
+}

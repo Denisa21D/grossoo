@@ -1,0 +1,448 @@
+.modal-account .modal-content {
+    padding: 25px 25px 50px 25px;
+    
+    h4.custom-title-1 {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 30px;
+        
+        &:after {
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px){
+            font-size: 24px;
+        }
+    }
+    
+    a.social {
+        margin: 40px 0 50px;
+        display: block;
+        text-align: center;
+        
+        @media (max-width: 768px){
+            margin: 30px 0 40px;
+        }
+        
+        img { 
+            max-width: 100%; 
+        }
+    }
+    
+    hr {
+        border: 2px solid #333;
+        text-align: center;
+        
+        &:after {
+            content: "OR";
+            position: relative;
+            display: inline-block;
+            top: -12px;
+            background: #fff;
+            width: 34px;
+            height: 20px;
+            font: 700 14px/1.5 Montserrat, sans-serif;
+            color: #333;
+        }
+    }
+    
+    form {
+        padding-top: 50px;
+        
+        .form-control {
+            font: 300 12px/1.5 Montserrat, sans-serif;
+            padding: 9px 15px;
+            height: 50px;
+            border: 2px solid #333;
+            color: #333;
+            border-radius: 35px;
+            
+            &:focus {
+                border: 2px solid #ff0000;
+            }
+        }
+        
+        .form-group { 
+            margin-bottom: 25px; 
+        }
+        
+        button {
+            width: auto;
+            padding: 10px 25px;
+            font: 700 14px/1.5 Montserrat, sans-serif;
+            color: #fff;
+            background: #333;
+            border-radius: 25px;
+        }
+        
+        .forget {
+            color: #333;
+            font: 400 14px/1.7 Montserrat, sans-serif;
+            text-decoration: underline;
+            margin: 10px 0;
+        }
+        
+        .options { 
+            padding:0 20px; 
+        }
+        
+        .checkbox {
+            span { 
+                color: #333; 
+                font: 400 14px/0.9 Montserrat, sans-serif;
+            }
+            
+            label.custom-checkbox-wrapper {
+                padding-left: 0;
+                
+                *{
+                    vertical-align: middle;
+                }
+                
+                .custom-checkbox-container {
+                    display: inline-block;
+                    width: 23px;
+                    height: 22px;
+                    border: 3px solid #333;
+                    position: relative;
+                    margin-right: 16px;
+                    border-radius: 11px;
+                    color: #777;
+                    margin-top: -3px;
+                    
+                    input [ type="checkbox" ] {
+                        display: block;
+                        opacity: 0;
+                        cursor: pointer;
+                        filter: alpha(opacity=0);
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        border: 0;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;
+                        
+                        &:checked + .custom-checkbox-icon {
+                           opacity: 1;
+                           filter: alpha(opacity=100);
+                        }
+                    }
+                    
+                    .custom-checkbox-icon {
+                        position: absolute;
+                        z-index: 9;
+                        width: 22px;
+                        height: 22px;
+                        border: 0;
+                        background: transparent;
+                        left: -1px;
+                        top: -1px;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        text-align: center;
+                        border-radius: 11px;
+                        
+                        i:before { 
+                            line-height: 11px;
+                            font-size: 11px;
+                            color: #333;
+                            left: -1px;
+                            top: 1px;
+                            position: relative; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .account-form form {
+        padding-top: 40px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.modal-cart .modal-content {
+    padding: 25px 25px 50px 25px;
+    
+    h1 {
+        color: #333; 
+        font: 600 36px/1.5 Montserrat, sans-serif; 
+    }
+    
+    .count-wrapper {
+        position: relative;
+        
+        &:before, &:after { 
+            display: none; 
+        }
+        
+        input {
+            width: 24px;
+            border: 0;
+            font-size: 18px;
+        }
+        
+        a {
+            height: 17px;
+            width: 17px;
+            position: absolute;
+            left: 24px;
+            line-height: 17px;
+            border: 0;
+            font-size: 17px;
+            
+            &.count-plus{
+                top: 0;
+            }
+            
+            &.count-min{
+                top: 17px;
+            }
+        }
+    }
+    
+    .cart-items {
+        table {
+            width: 100%;
+            
+            tr td, tr th {
+                padding-left: 30px;
+                padding-right: 30px;
+                font: 400 18px/1.5 Montserrat, sans-serif;
+            }
+            
+            thead {
+                tr th {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+            
+            tbody {
+                tr {
+                    border: 3px solid #333;
+                    
+                    td {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        
+                        .remove-action {
+                            color: #333;
+                            font-size: 22px;
+                            
+                            &:hover { 
+                                color: #bf9a78;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            tfoot {
+                border: 3px solid #333;
+                padding-top: 10px;
+                
+                tr {
+                    td {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        
+                        .btn-custom1 {
+                            width: auto;
+                            padding: 15px 25px;
+                            border-radius: 25px;
+                        }
+                        
+                        .btn-update-cart {
+                            color: #333;
+                        }
+                        
+                        .total { 
+                            color: #bf9a78; 
+                        }
+                        
+                        .actions { 
+                            padding-top: 10px;
+                            padding-bottom: 10px; 
+                        }
+                    }
+                    
+                    &:first-child td {
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-menu .modal-content {
+    padding: 50px 25px 50px 25px;
+    
+    .modal-menu-wrapper {
+        ul{
+            padding-top: 50px;
+            
+            li{
+                padding: 20px 0;
+                
+                a {
+                    font: 400 36px/1.5 Montserrat, sans-serif;
+                    color: #333;
+                    text-transform: uppercase;
+                    position: relative;
+                    display: block;
+                    
+                    &:hover {
+                        color: #bf9a78;
+                        
+                        &:after {
+                            content: "";
+                            display: inline-block;
+                            background: url(../img/custom_title_bg_hover.png) center no-repeat;
+                            width: 100%;
+                            height: 12px;
+                            color: #bf9a78;
+                            position: absolute;
+                            left: 0;
+                            bottom: -20px;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.modal-search .modal-content {
+    padding: 50px 25px;
+    
+    .modal-search-wrapper {
+        
+        h4 {
+           font: 400 36px/1.5 Montserrat, sans-serif;
+           text-transform: uppercase;
+           color: #333;
+           margin-bottom: 50px;  
+        }
+        
+        form {
+            .search-box {
+                border: 2px solid #333;
+                position: relative;
+                border-radius: 65px;
+                padding: 0;
+                height: 120px;
+                
+                .form-control {
+                    height: 80px;
+                    margin: 20px 0 20px 40px;
+                    width: 50%;
+                    font-size: 14px;
+                    padding: 10px;
+                    color: #333;
+                    border: none;
+                    background-color: #fff;
+                    box-shadow: none;
+                }
+                
+                .custom-select {
+                    width: 180px;
+                    padding: 0;
+                    font: 400 14px/1.5 Montserrat, sans-serif;
+                    border: 0;
+                    position: absolute;
+                    top: 50px;
+                    right: 120px;
+                }
+                
+                button {
+                    background: url(../img/sprite/modal/search.png) center no-repeat;
+                    color: #333;
+                    border-radius: 0px;
+                    width: 100px;
+                    height: 44px;
+                    transition: all 0.3s;
+                    position: absolute;
+                    right: 5px;
+                    top: 38px;
+                    
+                    &:before {
+                        content: " ";
+                        display: block;
+                        font: 700 12px/0.9 Montserrat, sans-serif;
+                        position: absolute;
+                        top: -10px;
+                        left: 0px;
+                        height: 60px;
+                        border-left: 3px solid #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-subscribe .modal-content {
+    padding: 50px 25px;
+    
+    .modal-subscribe-wrapper {
+        h4 {
+           font: 800 30px/1.5 Montserrat, sans-serif;
+           text-transform: uppercase;
+           color: #333;
+           margin-bottom: 30px;  
+        }
+        
+        p {
+            font: 400 18px/1.5 Montserrat, sans-serif;
+            margin-bottom: 40px;
+        }
+        
+        .newsletter {
+            position: relative;
+            
+            input#newsletter_email {
+                border: 3px solid #333;
+                border-radius: 25px;
+                height: 50px;
+                line-height: 20px;
+                padding: 15px 50px 15px 15px;
+                width: 100%;
+            }
+            
+            button {
+                border: 0;
+                background-color: #333;
+                color: #fff;
+                border-radius: 25px;
+                width: 120px;
+                height: 40px;
+                transition: all 0.3s;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                
+                span {
+                    font: 700 12px/1.5 Montserrat, sans-serif;
+                    text-transform: uppercase;
+                }
+                
+                &:hover {
+                    background-color: #fdba13;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

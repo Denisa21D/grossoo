@@ -1,0 +1,114 @@
+$category-content-color: #cfdde3;
+
+.categories-container {    
+    padding: 32px 0 0;
+
+    .register-panel {
+        margin-bottom: 30px;
+    }
+
+    .catgory-content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: 3px solid $zoom-color;
+        padding: 45px  25px 0; 
+        min-height: 400px;
+        background: $category-content-color;
+
+        @media (max-width: 480px) {
+            padding: 20px 5px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            padding-bottom: 45px;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            span {
+                font-weight: 100;
+            }
+        }
+
+        a {
+            display: block;            
+            font-size: 14px;
+            padding: 11px 0;
+            border-bottom: 1px dotted #9da7ab;
+            color: $zoom-color;
+            transition: all 0.3s;
+            
+            &:before {
+                display: block;
+                content: "\f101";
+                font-family: FontAwesome;
+                vertical-align: middle;
+                font-size: 14px;
+                float: left;
+            }
+
+            span {
+                margin-left: 10px;
+                font-weight: 300;
+            }
+
+            &:after {
+                display: block;
+                clear: both;
+            }
+
+            &:focus, &:hover {
+                color: $color1;
+                padding-left: 10px;
+            }
+
+
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .brand-container {
+        margin-bottom: 16px;
+
+        a {
+            position: relative;
+            display: block;
+            margin: 15px 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            &:focus, &:hover {
+                &:after {
+                    border: 3px solid $color1;
+                    display: block;
+                    content: '';
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                }                
+            }           
+
+            &:after {
+                border: 1px solid #d0dde3;
+                display: block;
+                content: '';
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                top: 0;                
+            }
+        }        
+    }
+}
+
